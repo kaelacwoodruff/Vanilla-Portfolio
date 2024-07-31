@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Eyesome-duo;
+    src: url("./eyesome-duo-script.otf");
+}
+
+/* Main */
+
+body {
+    background-color: #F0F1FF;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 16px;
+}
+
+/* Nav Bar */
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    display: flex;
+    order: 2
+}
+
+nav {
+    position: fixed;
+}
+.nav-bar {
+    font-size 2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Home Page */
+.home-page {
+    display: flex;
+    justify-content: space-around;
+}
+.chibi {
+    height: 34rem;
+    width: 34rem;
+}
+.hello {
+    display: flex;
+    align-items: center;
+}
+.big-hello {
+    font-size: 110px;
+    font-family: Eyesome-duo;
+}
+
+/* About */
+
+/* Skills */
+
+/* Projects */
+
+/* Contact */
