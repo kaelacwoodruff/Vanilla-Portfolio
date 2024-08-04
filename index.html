@@ -1,94 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kaela C. Woodruff</title>
     <link href="./Assets/styles.css" type="text/css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav>
-        <h1>Kaela C. Woodruff</h1>
-        <ul>
-            <li class="nav-bar">About</li>
-            <li class="nav-bar">Skills</li>
-            <li class="nav-bar">Portfolio</li>
-            <li class="nav-bar">Contact</li>
-        </ul>
+      <ul class="navigation">
+        <li class="nav-bar">About</li>
+        <li class="nav-bar">Skills</li>
+        <li class="nav-bar" id="head">Kaela C. Woodruff</li>
+        <li class="nav-bar">Portfolio</li>
+        <li class="nav-bar">Contact</li>
+      </ul>
     </nav>
     <div class="home-page">
-        <img src="Assets/IG square.png" alt="a chibi of Kaela in an instagram square" class="chibi">
-        <div class="hello">
-            <span class="big-hello">Hello!</span>
-            <p>I'm Kaela Woodruff. Full-stack software engineer. Welcome to my personal portfolio!</p>
+      <img
+        src="Assets/IG square.png"
+        alt="a chibi of Kaela in an instagram square"
+        class="chibi"
+      />
+      <div class="hello">
+        <div class="stack">
+          <span class="big-hello">Hello!</span>
+          <img class="paint" src="Assets/paint.png" alt="paint stripe" />
         </div>
+        <p id="intro">
+          I'm Kaela Woodruff. Full-stack software engineer. Welcome to my
+          personal portfolio!
+        </p>
+      </div>
     </div>
     <div class="about">
-        <h2>Kaela at a Glance</h2>
-        <div class="timeline">
-            <div>
-                <h3>2017</h3>
-                <h4>B.S. in Family Studies</h4>
+      <h2>Kaela at a Glance</h2>
+      <div class="timeline">
+        <div class="timelines">
+          <div class="stack-container">
+            <div class="tl">
+              <h3>2017</h3>
+              <h4>B.S. in Family Studies</h4>
             </div>
-            <div>
-                <h3>*The Gap in the Resume*</h3>
-                <h4>Full-time mom, part-time author & coffee enthusiast</h4>
-            </div>
-            <div>
-                <h3>2024</h3>
-                <h4>Codecademy Full-stack Engineer Path</h4>
-            </div>
+            <img
+              class="twitter-card"
+              src="Assets/tlsquare.png"
+              alt="twitter card"
+            />
+          </div>
         </div>
+        <div class="timelines">
+          <img src="Assets/arrow.png" class="arrow" />
+          <div class="stack-container">
+            <div class="tl">
+              <h3>*The Gap in the Resume*</h3>
+              <h4>Full-time mom, part-time author & coffee enthusiast</h4>
+            </div>
+            <img
+              class="twitter-card"
+              src="Assets/tlsquare.png"
+              alt="twitter card"
+              id="gap"
+            />
+          </div>
+        </div>
+        <div class="timelines">
+          <img src="Assets/arrow.png" class="arrow" />
+          <div class="stack-container">
+            <div class="tl">
+              <h3>2024</h3>
+              <h4>Codecademy Full-stack Engineer Path</h4>
+            </div>
+            <img
+              class="twitter-card"
+              src="Assets/tlsquare.png"
+              alt="twitter card"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <div class="skills">
-        <h2>Technical Skills</h2>
-        <div>
-            <h3>Languages</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>Javascript</li>
-                </ul>
-            <h3>Libraries & Frameworks</h3>
-                <ul>
-                    <li>React, eventually</li>
-                </ul>
-            <h3>Styling</h3>
-                <ul>
-                    <li>CSS</li>
-                </ul>
-            <h3>Other</h3>
-                <ul>
-                    <li>Probably some other stuff idk</li>
-                </ul>
+      <h2>Technical Skills</h2>
+      <div class="tech-skills">
+        <div class="bullet-points">
+          <h3>Languages</h3>
+          <ul>
+            <li>HTML</li>
+            <li>Javascript</li>
+          </ul>
         </div>
+        <div class="bullet-points">
+          <h3>Libraries & Frameworks</h3>
+          <ul>
+            <li>React, eventually</li>
+          </ul>
+        </div>
+        <div class="bullet-points">
+          <h3>Styling</h3>
+          <ul>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div class="bullet-points">
+          <h3>Other</h3>
+          <ul>
+            <li>Probably some other stuff idk</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="projects">
-        <h2>Projects</h2>
-        <h3>Sample some of the code I've written!</h3>
-        <div>
-            <img src="">
+      <h2>Projects</h2>
+      <h3 class="sample-text">Sample some of the code I've written!</h3>
+      <div class="samples">
+        <div class="code-samples">
+          <img class="project" src="Assets/portfolio.png" />
+          <h5>JavaScript, HTML, CSS</h5>
+          <h3 class="sample-title">Personal Vanilla Portfolio</h3>
+          <p class="more-sample-text">
+            You're experiencing this one in real time!
+          </p>
+          <div class="repository">
+            <img src="Assets/githubsmol.png" class="gitlogosmol" />
+            <span 
+              ><a
+                href="https://github.com/kaelacwoodruff/Style-Sheet"
+                target="'_blank" class="repository-text"
+                >Repository</a
+              ></span
+            >
+          </div>
         </div>
-        <div>
-            <img src="">
+        <div class="code-samples">
+          <img class="project" src="Assets/StyleGuide.png" />
+          <h5>CSS</h5>
+          <h3 class="sample-title">Style Guide</h3>
+          <p class="more-sample-text">
+            A sampling of my CSS experience, including FlexBox!
+          </p>
+          <div class="repository">
+            <img src="Assets/githubsmol.png" class="gitlogosmol" />
+            <span
+               ><a
+                href="https://github.com/kaelacwoodruff/Style-Sheet"
+                target="'_blank" class="repository-text"
+                >Repository</a
+              ></span
+            >
+          </div>
         </div>
-        <div>
-            <img src="">
+        <div class="code-samples">
+          <img class="project" src="Assets/function.png" />
+          <h5>JavaScript</h5>
+          <h3 class="sample-title">Random Message Generator</h3>
+          <p class="more-sample-text">
+            Become a worldhopper in the Cosmere through the power of JavaScript
+            functions!
+          </p>
+          <div class="repository">
+            <img src="Assets/githubsmol.png" class="gitlogosmol" />
+            <span
+              ><a
+                href="https://github.com/kaelacwoodruff/Style-Sheet"
+                target="'_blank" class="repository-text"
+                >Repository</a
+              ></span
+            >
+          </div>
         </div>
+      </div>
     </div>
     <div class="contact">
-        <p>Want to work together? Message me on Linkedin, or check out my resume!</p>
-        <div>
-            <img src="" class="linked-in">
-            <span class="resume">View my resume</span>
-            <img src="" class="git"
-        </div>
+      <p class="work-together">
+        Want to work together? Message me on Linkedin, or check out my resume!
+      </p>
+      <div class="icons">
+        <img src="Assets/linkedinlogo.png" class="linked-in" />
+        <span class="resume">View my resume</span>
+        <img src="Assets/githublogo.png" class="git" />
+      </div>
     </div>
     <footer>
-        <span class="copyright">© 2024 Kaela C. Woodruff, All rights reserved.</span>
+      <span class="copyright"
+        >© 2024 Kaela C. Woodruff, All rights reserved.</span
+      >
     </footer>
-    
-</body>
+  </body>
 </html>
