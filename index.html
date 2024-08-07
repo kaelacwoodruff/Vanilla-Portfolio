@@ -13,16 +13,19 @@
     />
   </head>
   <body>
-    <nav>
-      <ul class="navigation">
-        <li class="nav-bar">About</li>
-        <li class="nav-bar">Skills</li>
-        <li class="nav-bar" id="head">Kaela C. Woodruff</li>
-        <li class="nav-bar">Portfolio</li>
-        <li class="nav-bar">Contact</li>
+    <nav class="show">
+        <a href="#about" class="nav-bar">About</a>
+        <a href="#skills" class="nav-bar">Skills</a>
+        <a href="#home" class="nav-bar" id="head">Kaela C. Woodruff</a>
+        <a href="#portfolio" class="nav-bar">Portfolio</a>
+        <a href="#contact" class="nav-bar">Contact</a>
       </ul>
     </nav>
-    <div class="home-page">
+    <div id="theme-switcher">
+        <img id="theme-image" src="Assets/dark.png" alt="dark mode icon" />
+        <img hidden id="light-theme-image" src="Assets/light.png" alt="light mode icon" />
+    </div>
+    <div class="home-page" id="home">
       <img
         src="Assets/IG square.png"
         alt="a chibi of Kaela in an instagram square"
@@ -39,7 +42,7 @@
         </p>
       </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
       <h2>Kaela at a Glance</h2>
       <div class="timeline">
         <div class="timelines">
@@ -59,8 +62,8 @@
           <img src="Assets/arrow.png" class="arrow" />
           <div class="stack-container">
             <div class="tl">
-              <h3>*The Gap in the Resume*</h3>
-              <h4>Full-time mom, part-time author & coffee enthusiast</h4>
+              <h3 id="gap-text1">*The Gap in the Resume*</h3>
+              <h4 id="gap-text2">Full-time mom, part-time author & coffee enthusiast</h4>
             </div>
             <img
               class="twitter-card"
@@ -86,7 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="skills">
+    <div class="skills" id="skills">
       <h2>Technical Skills</h2>
       <div class="tech-skills">
         <div class="bullet-points">
@@ -116,7 +119,7 @@
         </div>
       </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="portfolio">
       <h2>Projects</h2>
       <h3 class="sample-text">Sample some of the code I've written!</h3>
       <div class="samples">
@@ -129,9 +132,10 @@
           </p>
           <div class="repository">
             <img src="Assets/githubsmol.png" class="gitlogosmol" />
+            <img hidden src="Assets/github.svg" class="gitlogodark" />
             <span 
               ><a
-                href="https://github.com/kaelacwoodruff/Style-Sheet"
+                href="https://github.com/kaelacwoodruff/Vanilla-Portfolio"
                 target="'_blank" class="repository-text"
                 >Repository</a
               ></span
@@ -147,6 +151,7 @@
           </p>
           <div class="repository">
             <img src="Assets/githubsmol.png" class="gitlogosmol" />
+            <img hidden src="Assets/github.svg" class="gitlogodark" />
             <span
                ><a
                 href="https://github.com/kaelacwoodruff/Style-Sheet"
@@ -166,9 +171,10 @@
           </p>
           <div class="repository">
             <img src="Assets/githubsmol.png" class="gitlogosmol" />
+            <img hidden src="Assets/github.svg" class="gitlogodark" />
             <span
               ><a
-                href="https://github.com/kaelacwoodruff/Style-Sheet"
+                href="https://github.com/kaelacwoodruff/JavaScript-Practice/blob/main/JavaScript-Practice/messageGenerator.js"
                 target="'_blank" class="repository-text"
                 >Repository</a
               ></span
@@ -177,7 +183,7 @@
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
       <p class="work-together">
         Want to work together? Message me on Linkedin, or check out my resume!
       </p>
@@ -192,5 +198,6 @@
         >© 2024 Kaela C. Woodruff, All rights reserved.</span
       >
     </footer>
-  </body>
+    <script src="index.js"></script>
+</body>
 </html>

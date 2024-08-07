@@ -10,6 +10,8 @@ body {
     font-family: 'Poppins', sans-serif;
     color: black;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -53,25 +55,25 @@ p {
     text-align: center;
 }
 
-li {
-    /* margin-top: 0; */
-}
 
 /* Nav Bar */
 #head {
     font-size: 2.5rem;
     font-weight: 800;
-    white-space: nowrap;
-    
+    white-space: nowrap;  
 }
 
-/* nav {
-    position: fixed;
-} */
+#head:active {
+    font-weight: 900;
+}
 
-.navigation {
+ nav.show {
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    background: #d99af8;
+    z-index: 2;
  }
  
 
@@ -84,7 +86,32 @@ li {
     justify-content: center;
     align-items: center;
     border-bottom: 3px solid black;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
 
+.nav-bar:hover {
+    text-decoration: underline;
+}
+
+.nav-bar:active {
+    font-weight: 700;
+}
+
+#theme-switcher {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#theme-image, #light-theme-image {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 5px;
+    margin-top: 5.5rem;
+}
+
+#light-theme-image {
 }
 
 /* Home Page */
@@ -177,7 +204,6 @@ li {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   /* margin-top: 150px; */
    
 }
 
@@ -237,7 +263,7 @@ li {
     width: 25rem;
 }
 
-.gitlogosmol {
+.gitlogosmol, .gitlogodark {
     height: 3rem;
     width: 3rem;
 }
@@ -301,4 +327,36 @@ li {
 
 .copyright {
     margin-top: 3rem;
+}
+
+@media screen and (max-width: 1700px) {
+    .about {
+        height: 38rem;
+    }
+
+    
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .twitter-card {
+        height: 25rem;
+    }
+
+    .arrow {
+        height: 5rem;
+    }
+
+    #gap-text1 {
+        font-size: 1.2rem;
+    }
+
+    #gap-text2 {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+
+    #gap {
+        height: 25rem;
+    }
 }
