@@ -12,6 +12,7 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    width: 100%
 }
 
 h2 {
@@ -111,8 +112,7 @@ p {
     margin-top: 5.5rem;
 }
 
-#light-theme-image {
-}
+
 
 /* Home Page */
 .home-page {
@@ -329,12 +329,11 @@ p {
     margin-top: 3rem;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1520px) {
     .about {
         height: 38rem;
     }
 
-    
     h2 {
         margin-bottom: 0;
     }
@@ -358,5 +357,215 @@ p {
 
     #gap {
         height: 25rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    #theme-image, #light-theme-image {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 5px;
+        margin-top: 5.5rem;
+    }
+
+    h2 {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        /* text-align: left; */
+    }
+
+    h4 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    li {
+        /* text-align: center; */
+    }
+
+
+/* Nav Bar */
+#head {
+    font-size: 1rem;
+    font-weight: 800;
+    white-space: nowrap;
+    order: 0;  
+}
+
+#head:active {
+    font-weight: 900;
+}
+
+ nav.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    background: #d99af8;
+    z-index: 2;
+
+ }
+ 
+
+.nav-bar {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    order: 1;
+}
+
+.nav-bar:active {
+    font-weight: 700;
+}
+
+    .home-page {
+        display: flex;
+        flex-direction: column;
+        height: 55rem;
+    }
+
+    .chibi {
+        height: 25rem;
+        width: 25rem;
+        margin-top: 3rem;
+    }
+
+    .big-hello {
+        font-size: 7rem;
+    }
+
+    .paint {
+        height: 5rem;
+    }
+
+    .about {
+        height: 100rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 0;
+        height: 65rem;
+    }
+    .timelines {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .twitter-card {
+        height: 20rem;
+    }
+
+    .arrow {
+        height: 5rem;
+        transform: rotate(90deg);
+        margin: 0;
+    }
+
+    #gap-text1 {
+        font-size: 1rem;
+    }
+
+    #gap-text2 {
+        font-size: 0.8rem;
+        /* margin-bottom: 2.5rem; */
+    }
+
+    #gap {
+        height: 20rem;
+    }
+
+    .tech-skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 45rem;
+    }
+
+    .bullet-points {
+        width: 11rem;
+    }
+
+    .projects {
+        height: 100rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .sample-text {
+        margin-bottom: 0;
+        width: 18rem;
+        text-align: center;
+    }
+
+    .samples {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .code-samples {
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem;
+        height: 25rem;
+        width: 20rem;
+    }
+    
+    .project {
+      height: 10rem;
+       width: 20rem;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 15rem;
+    }
+
+    .linked-in, .git {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .resume {
+        font-size: 0.75rem;
+        height: 1.25rem;
+        width: 7rem;
+        padding: 0.75rem 0.5rem;
+
+    }
+    .work-together {
+        width: 18rem;
     }
 }
